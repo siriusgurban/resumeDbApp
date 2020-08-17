@@ -1,8 +1,8 @@
 package com.company.dao.inter;
 
-import com.company.bean.User;
+import com.company.entity.User;
+import com.company.entity.UserSkill;
 
-import javax.jws.soap.SOAPBinding;
 import java.util.List;
 
 public interface UserDaoInter {
@@ -13,6 +13,10 @@ public interface UserDaoInter {
 
     public boolean updateUser(User u) throws Exception;
 
+    public boolean addUser(User u) throws Exception;
+
     public boolean removeUser(int id) throws Exception;
+
+
 
 }
